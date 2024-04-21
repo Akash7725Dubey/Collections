@@ -1,0 +1,25 @@
+//using System;
+//using System.Collections.Generic;
+//using System.Collections;
+//using System.Linq;
+//using System.Text;
+//using System.Threading.Tasks;
+
+//namespace Collection_Demo
+//{
+//    public class StackDemo
+//    {
+//        public static void Main(string[] args)
+//        {
+//            Stack stack = new Stack();
+//            stack.Push("Akash");
+//            stack.Push("Priya");
+//            stack.Push("Prince");
+//            foreach(object o in stack)
+//            {
+//                Console.Write(o);
+//                Console.WriteLine();
+//            }
+//        }
+//    }
+//}
