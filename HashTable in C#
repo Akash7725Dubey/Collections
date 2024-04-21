@@ -1,0 +1,33 @@
+//using System;
+//using System.Collections.Generic;
+//using System.Collections;
+//using System.Linq;
+//using System.Text;
+//using System.Threading.Tasks;
+
+
+
+//HashTable is similar to arraylist but represents the item as a combination of a key and value.
+
+
+//DictionaryEntry : a class whose object represent the data in a combination of key and value pair.
+
+//namespace Collection_Demo
+//{
+//    public class HashTable
+//    {
+//        static void Main(string[] args)
+//        {
+//            Hashtable ht = new Hashtable();
+//            ht.Add("Akash", "1");
+//            ht.Add("Priya", "2");
+//            ht.Add("Prince", "3");
+//            foreach(DictionaryEntry d in ht)
+//            {
+//                Console.Write(d.Key + " " + d.Value);//output is been printed in a random order
+//                Console.WriteLine();
+//            }
+
+//        }
+//    }
+//}
