@@ -1,0 +1,40 @@
+//using System;
+//using System.Collections;
+//using System.Collections.Generic;
+//using System.Linq;
+//using System.Text;
+//using System.Threading.Tasks;
+
+
+
+
+//ArrayList is a class Collection used for any type of object.
+//1. ArrayList is a class similar to the array, but it can store values of various types
+//2. An ArrayList does not have a specific size.
+//3.Any Number of element can be store.
+
+
+
+//namespace Collection_Demo
+//{
+//    public class ArrayList_Demo
+//    {
+//        static void Main(string[] args)
+//        {
+//            ArrayList al = new ArrayList();
+//            String str = "What is your Name";
+//            int x = 6;
+//            DateTime d = DateTime.Parse("8-oct-1985");
+//            al.Add(str);
+//            al.Add(x);
+//            al.Add(d);
+//            foreach (object o in al)
+//            {
+//                Console.WriteLine(o);
+//                Console.WriteLine();
+//            }
+
+//        }
+
+//    }
+//}
