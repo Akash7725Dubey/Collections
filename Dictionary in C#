@@ -1,0 +1,60 @@
+using System;
+using System.Collections.Generic;
+using System.Collections;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+
+
+
+
+//Dictionary is a generic Collection of Key-Value pair.The keys must be unique,but value can not be duplicated.
+//Dictionaries are implemented as hash tables so their keys can quickly access them.
+
+
+//To create a dictionary in C#,we use the Dictionary<T key,T Value>class,where TKey is the type of the key and TValue is the type of the values.
+
+
+
+
+
+//We can retrieve a value from a dictionary by its key using the Get() method.
+
+
+//The Count property gets the number of key/value pair in a dictionary.
+
+namespace Collection_Demo{
+//    public class Dictionary
+//    {
+//        static void Main(string[] args)
+//        {
+//            Dictionary<int, string> dic = new Dictionary<int,string>();
+//            dic.Add(1, "Akash");
+//            dic.Add(2, "Priya");
+//            dic.Add(3, "Prince");
+//            dic.Add(4, "Kamlesh");
+//            dic.Add(5, "vimlesh");
+//            foreach(var item in dic)
+//            {
+//                Console.Write(item);
+//                Console.WriteLine();
+//            }
+//        }
+//    }
+class Program
+    {
+        public static void Main(string[] args)
+        {
+            Dictionary<string,int> dic = new Dictionary<string,int>();
+            dic.Add("one", 1);
+            dic.Add("two", 2);
+            dic.Add("three", 3);
+            dic.Add("four", 4);
+            foreach(var value in dic)
+            {
+                Console.WriteLine(value);
+            }
+        }
+    }
+}
