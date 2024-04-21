@@ -1,1 +1,226 @@
+using System;
+using System.Collections.Generic;
+using System.Collections;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Collection_Demo
+{
+
+    //HashSet is an unordered collection of unique element.
+    //It is been used when we want to prevent duplicate element from being inserted
+    //public class HashSet_Demo
+    //{
+    //    static void Main(string[] args)
+    //    {
+    //        HashSet<string> names = new HashSet<string> { "Akash", "Prakash", "Avinash", "Jagdish" };
+    //        foreach(var name in names) { 
+    //        Console.WriteLine(name);
+
+    //        }
+    //    }
+    //}
+
+
+
+
+
+
+
+
+
+    //UnionWith combines the element ,present in both collection into the collection on which it been called.
+
+
+    //public class HashSetDemo
+    //{
+    //    static void Main(string[] args)
+    //    {
+
+    //        HashSet<string> names = new HashSet<string> { "Akash", "Ramesh", "Suresh" };
+    //        HashSet<string> names1 = new HashSet<string> { "Akash", "Pawan", "Shyam", "Suresh", "Rakesh" };
+    //        names.UnionWith(names1);
+    //        foreach (string name in names)
+    //        {
+    //            Console.WriteLine(name);
+    //        }
+    //    }
+
+    //}
+
+
+
+
+
+
+
+
+//    IntersectionWith combines the element, that are common in both the collection
+
+    //public class HashSetDemo
+    //{
+    //    static void Main(string[] args)
+    //    {
+    //        HashSet<string> name = new HashSet<string> { "Akash", "Ramesh", "Suresh" };
+    //        HashSet<string> name1 = new HashSet<string> { "Akash", "Pawan", "Shyam", "Suresh" };
+    //        name.IntersectWith(name1);
+    //        foreach (var names in name)
+    //        {
+    //            Console.WriteLine(names);
+    //        }
+    //    }
+    //}
+
+
+
+
+
+
+   // ExceptWith removes all the element that are present in the other collections from the collection on which it is called.
+    //public class HashSetDemo
+    //{
+    //    static void Main(string[] args)
+    //    {
+    //        HashSet<string> names = new HashSet<string> { "Rajeev", "Akash", "Amit" };
+    //        HashSet<string> names1 = new HashSet<string> { "Rajeev", "Akash", "Amit", "Deepak", "Mohit" };
+    //        names1.ExceptWith(names);
+    //        foreach (var name in names1)
+    //        {
+    //            Console.WriteLine(name);
+    //        }
+    //    }
+
+    //}
+
+
+
+
+
+
+
+
+
+
+    //public class Employee
+    //{
+    //    public int Emp_Id { get; set; }
+    //    public string Emp_Name { get; set; }
+    //    public string Dept_Name { get; set; }
+    //    class Program
+    //    {
+    //        static void Main(string[] args)
+    //        {
+    //            Console.WriteLine("------Custom HashSet with Duplicates----");
+
+    //            HashSet<Employee> employees = new HashSet<Employee>
+    //        {
+    //            {
+    //                new Employee{
+    //                Emp_Id = 1,Emp_Name="Akash",Dept_Name="EC"
+    //                }
+    //            },
+    //            {
+    //                new Employee
+    //                {
+    //                    Emp_Id=1,Emp_Name="Akash",Dept_Name="EC"
+    //                }
+    //            },
+    //            {
+    //                new Employee
+    //                {
+    //                    Emp_Id=3,Emp_Name="Rajeev",Dept_Name="IT"
+    //                }
+    //            },
+    //            { new Employee
+    //            {
+    //                Emp_Id=4,Emp_Name="Sanjeev",Dept_Name="CS"
+    //            }
+    //            }
+
+    //        };
+    //            Console.WriteLine("{0,-6}{1,10}{2,-8}", "Emp_Id", "Emp_name", "Dept_name");
+
+    //            foreach (var employee in employees)
+    //            {
+    //                Console.WriteLine("{0,-8}{1,-10}{2,5}", employee.Emp_Id, employee.Emp_Name, employee.Dept_Name);
+    //            }
+    //        }
+    //    }
+
+
+    //}
+
+
+
+    //We know that HashSet will not allow the duplicates into the collection but still in the output we are having the duplicate records.
+    //To overcome this drawback ,we need to implement IEquatable interface,override Equals and GetHashCode methods
+
+
+
+
+
+
+
+
+
+
+
+    //public class Employee:IEquatable<Employee>
+    //{
+    //    public int Emp_Id { get; set; }
+    //    public string Emp_Name { get; set; }
+    //    public string Dept_Name { get; set; }
+    //    public bool Equals(Employee other)
+    //    {
+    //        return this.Emp_Id.Equals(other.Emp_Id);
+
+    //    }
+    //    public override int GetHashCode()
+    //    {
+    //        return this.Emp_Id.GetHashCode();
+    //    }
+    //}
+    //class Program
+    //    {
+    //        static void Main(string[] args)
+    //        {
+    //            Console.WriteLine("------Custom HashSet with Duplicates----");
+
+    //            HashSet<Employee> employees = new HashSet<Employee>
+    //        {
+    //            {
+    //                new Employee{
+    //                Emp_Id = 1,Emp_Name="Akash",Dept_Name="EC"
+    //                }
+    //            },
+    //            {
+    //                new Employee
+    //                {
+    //                    Emp_Id=1,Emp_Name="Akash",Dept_Name="EC"
+    //                }
+    //            },
+    //            {
+    //                new Employee
+    //                {
+    //                    Emp_Id=3,Emp_Name="Rajeev",Dept_Name="IT"
+    //                }
+    //            },
+    //            { new Employee
+    //            {
+    //                Emp_Id=4,Emp_Name="Sanjeev",Dept_Name="CS"
+    //            }
+    //            }
+
+    //        };
+    //            Console.WriteLine("{0,-6}{1,-10}{2,5}", "Emp_Id", "Emp_name", "Dept_name");
+
+    //            foreach (var employee in employees)
+    //            {
+    //                Console.WriteLine("{0,-8}{1,-10}{2,5}", employee.Emp_Id, employee.Emp_Name, employee.Dept_Name);
+    //            }
+    //        }
+    //    }
+
+}
 
