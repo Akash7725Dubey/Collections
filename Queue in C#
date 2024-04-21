@@ -1,0 +1,26 @@
+//using System;
+//using System.Collections.Generic;
+//using System.Collections;
+//using System.Linq;
+//using System.Text;
+//using System.Threading.Tasks;
+
+//namespace Collection_Demo
+//{
+//    public class QueueDemo
+//    {
+//        static void Main(string[] args)
+//        {
+//            Queue q= new Queue();
+//            q.Enqueue("Akash");
+//            q.Enqueue("Priya");
+//            q.Enqueue("Prince");
+//            foreach(var item in q)
+//            {
+//                Console.Write(item);
+//                Console.WriteLine();
+//            }
+//        }
+
+//    }
+//}
