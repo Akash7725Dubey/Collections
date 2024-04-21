@@ -1,0 +1,41 @@
+//using System;
+//using System.Collections.Generic;
+//using System.Collections;
+//using System.Linq;
+//using System.Text;
+//using System.Threading.Tasks;
+
+
+
+
+
+
+
+
+
+//SortedList is a class that has the combination of arraylist and the hashtable.
+//It represents the data as a key and value pair.
+//Arranges all the element in the sorted order.
+
+
+
+
+//namespace Collection_Demo
+//{
+//    public class SortedList
+//    {
+//        static void Main(string[] args)
+//        {
+//            SortedList<int, string> sl = new SortedList<int, string>();
+//            sl.Add(1, "Akash");
+//            sl.Add(2, "Priya");
+//            sl.Add(3, "Prince");
+//            sl.Add(4, "Kamlesh");
+//            sl.Add(5, "Vimlesh");
+//            foreach(KeyValuePair <int,string> keyValuePair in sl)
+//            {
+//                Console.WriteLine(keyValuePair.Key+" "+keyValuePair.Value);
+//            }
+//        }
+//    }
+//}
